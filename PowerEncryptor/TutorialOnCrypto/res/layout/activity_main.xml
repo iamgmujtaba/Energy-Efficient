@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/mainRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/fileSizeName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:paddingLeft="5dp"
+                android:text="File Size                    Encryption Algo"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/fileSizeGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:checkedButton="@+id/hundredKB"
+                android:paddingTop="30dp" >
+
+                <RadioButton
+                    android:id="@+id/hundredKB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100kB" />
+
+                <RadioButton
+                    android:id="@+id/fiveHundredKB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="500kB" />
+
+                <RadioButton
+                    android:id="@+id/onethousandKB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1000kB" />
+
+                <RadioButton
+                    android:id="@+id/fifteenKB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1500kB" />
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/algorithems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:checkedButton="@+id/AesEncription"
+                android:paddingTop="30dp" >
+
+                <TextView
+                    android:id="@+id/singleEncrption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Single Encrption"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/AesEncription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AES Encription" />
+
+                <RadioButton
+                    android:id="@+id/BlowfishEncription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blowfish Encription" />
+
+                <TextView
+                    android:id="@+id/doubleEncrption"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Double Encrption"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/Blowfish_AES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blowfish-AES" />
+
+                <RadioButton
+                    android:id="@+id/AES_Blowfish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AES-Blowfish" />
+
+                <RadioButton
+                    android:id="@+id/XTS_AES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="XTS-AES" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="vertical" >
+
+            <TextView
+                android:id="@+id/ServerNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/DevicesName"
+                android:paddingLeft="5dp"
+                android:text="Devices"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/DevicesName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:checkedButton="@+id/Motorolla"
+                android:paddingTop="25dp" >
+
+                <RadioButton
+                    android:id="@+id/Motorolla"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Motorolla" />
+
+                <RadioButton
+                    android:id="@+id/samsung"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samsung" />
+
+                <RadioButton
+                    android:id="@+id/Hawawi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hawawi" />
+
+                <RadioButton
+                    android:id="@+id/Qmobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Qmobile" />
+            </RadioGroup>
+
+            <!--
+             <RadioGroup
+                android:id="@+id/ServerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:paddingTop="25dp"
+                android:paddingRight="70dp"
+                android:checkedButton="@+id/Server1" >
+
+                <RadioButton
+                    android:id="@+id/Server1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Server 1" />
+
+                <RadioButton
+                    android:id="@+id/Server2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Server 2" />
+                
+                <RadioButton
+                    android:id="@+id/Server3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Server 3" />
+
+                <RadioButton
+                    android:id="@+id/Server4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Server 4" />
+                
+            </RadioGroup>
+            -->
+
+            <TextView
+                android:id="@+id/encription_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/DevicesName"
+                android:paddingTop="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/encrypt_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/encription_name" />
+
+            <!--
+            <TextView
+                android:id="@+id/tvorig"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/encription_name" />
+
+            <TextView
+                android:id="@+id/tvencoded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvorig" />
+
+            <TextView
+                android:id="@+id/tvdecoded"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvencoded" />
+            -->
+
+            <Button
+                android:id="@+id/encryptBtn"
+                android:layout_width="130sp"
+                android:layout_height="40sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Encrypt File" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/uploadBtn"
+            android:layout_width="130sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@+id/relativeLayout2"
+            android:layout_below="@+id/relativeLayout2"
+            android:layout_marginRight="15dp"
+            android:text="Upload File"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</ScrollView>
