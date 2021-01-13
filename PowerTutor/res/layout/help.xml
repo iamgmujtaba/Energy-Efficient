@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textAreaScroller"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_x="0px"
+    android:layout_y="0px"
+    android:background="@drawable/help" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/s0"
+            android:layout_width="250px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5px"
+            android:text="@string/help_head"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/s1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s0"
+            android:background="@drawable/icon" />
+
+        <TextView
+            android:id="@+id/s2"
+            android:layout_width="300px"
+            android:layout_height="5px"
+            android:layout_below="@+id/s1"
+            android:layout_marginLeft="3px"
+            android:background="@drawable/line" />
+
+        <TextView
+            android:id="@+id/s3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s2"
+            android:layout_marginLeft="5px"
+            android:layout_marginRight="5px"
+            android:text="@string/help_text"
+            android:textColor="#000000"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/s4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s3"
+            android:layout_marginLeft="5px"
+            android:text="@string/url_1"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/s5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/s4"
+            android:layout_marginLeft="5px"
+            android:text="@string/url_2"
+            android:textColor="#000000" />
+    </RelativeLayout>
+
+</ScrollView>
